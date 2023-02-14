@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.util.Scanner;
 
 public class Task2 {
-    public void task2(){
+    public static void task2(){
         Scanner scan = new Scanner(System.in);
         int count = 0;
         double summa = 0, summa2 = 0;

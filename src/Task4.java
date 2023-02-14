@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Task4 {
-    public void words() {
+    public static void words() {
         Scanner in = new Scanner(System.in);
         System.out.println("Write some words:");
         String text = in.nextLine();

@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        Task1 task1 = new Task1();
-        Task2 task2 = new Task2();
-        Task3 task3 = new Task3();
-        Task4 task4 = new Task4();
+//        Task1 task1 = new Task1();
+//        Task2 task2 = new Task2();
+//        Task3 task3 = new Task3();
+//        Task4 task4 = new Task4();
 
         while(true){
             System.out.println("------------------------------");
@@ -22,16 +22,16 @@ public class Main {
 
             switch (opt) {
                 case 1:
-                    task1.mathProblem();
+                    Task1.mathProblem();
                     break;
                 case 2:
-                    task2.task2();
+                    Task2.task2();
                     break;
                 case 3:
-                    task3.matrixVector();
+                    Task3.matrixVector();
                     break;
                 case 4:
-                    task4.words();
+                    Task4.words();
                     break;
                 case 5:
                     System.exit(0);

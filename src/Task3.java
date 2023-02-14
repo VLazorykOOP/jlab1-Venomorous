@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Task3 {
-    public void matrixVector() {
+    public static void matrixVector() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the size of the matrix: ");
         int n = scan.nextInt();

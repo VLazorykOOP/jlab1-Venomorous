@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Task1 {
-    public void mathProblem(){
+    public static void mathProblem(){
 
         Scanner scan = new Scanner(System.in);
 
