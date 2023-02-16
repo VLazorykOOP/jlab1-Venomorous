@@ -10,7 +10,7 @@ public class Task1 {
 //        System.out.print("Enter second number: ");
 //        double num2 = scan.nextDouble();
 //        System.out.println("\n");
-        int aint, bint;
+        int aint = 0, bint;
         double ad, bd;
 
         int resint;
@@ -43,26 +43,48 @@ public class Task1 {
                         switch (opt2) {
                             case 1:
                                 System.out.print("Enter a: ");
-                                aint = scan.nextInt();
+                                if(scan.hasNextInt()) {
+                                    aint = scan.nextInt();
 
-                                System.out.print("\nEnter b: ");
-                                bint = scan.nextInt();
+                                    System.out.print("\nEnter b: ");
+                                    if(scan.hasNextInt()) {
+                                    bint = scan.nextInt();
 
-                                resint = (aint * bint - (aint + bint) * (aint - bint)) / (bint ^ 4 + aint ^ 3) + 5 * bint;
-                                System.out.print("\nResult is: " + resint + "\n");
+                                    resint = (aint * bint - (aint + bint) * (aint - bint)) / (bint ^ 4 + aint ^ 3) + 5 * bint;
+                                    System.out.print("\nResult is: " + resint + "\n");
+                                    } else {
+                                        scan.next();
+                                        System.out.println("\nWrong input!!!");
+                                    }
+
+                                }else {
+                                    scan.next();
+                                    System.out.println("\nWrong input!!!");
+                                }
                                 break;
                             case 2:
                                 System.out.print("Enter a: ");
-                                aint = scan.nextInt();
+                                if(scan.hasNextInt()) {
+                                    aint = scan.nextInt();
 
-                                System.out.print("\nEnter b: ");
-                                bint = scan.nextInt();
+                                    System.out.print("\nEnter b: ");
+                                    if(scan.hasNextInt()) {
+                                        bint = scan.nextInt();
 
-                                ad = aint;
-                                bd = bint;
+                                        ad = aint;
+                                        bd = bint;
 
-                                resd = (ad * bd - (ad + bd) * (ad - bd)) / (bd * bd * bd * bd + ad * ad * ad) + 5 * bd;
-                                System.out.print("\nResult is: " + resd + "\n");
+                                        resd = (ad * bd - (ad + bd) * (ad - bd)) / (bd * bd * bd * bd + ad * ad * ad) + 5 * bd;
+                                        System.out.print("\nResult is: " + resd + "\n");
+                                    } else {
+                                        scan.next();
+                                        System.out.println("\nWrong input!!!");
+                                    }
+
+                                }else {
+                                    scan.next();
+                                    System.out.println("\nWrong input!!!");
+                                }
                                 break;
 //                            case 3:
 //                                System.exit(0);
@@ -86,23 +108,46 @@ public class Task1 {
                         switch (opt2) {
                             case 1:
                                 System.out.print("Enter a: ");
-                                ad = scan.nextDouble();
+                                if(scan.hasNextDouble()) {
+                                    ad = scan.nextDouble();
 
-                                System.out.print("\nEnter b: ");
-                                bd = scan.nextDouble();
+                                    System.out.print("\nEnter b: ");
+                                    if (scan.hasNextDouble()) {
+                                        bd = scan.nextDouble();
 
-                                resint = (int) ((ad * bd - (ad + bd) * (ad - bd)) / (bd * bd * bd * bd + ad * ad * ad) + 5 * bd);
-                                System.out.print("\nResult is: " + resint + "\n");
+                                        resint = (int) ((ad * bd - (ad + bd) * (ad - bd)) / (bd * bd * bd * bd + ad * ad * ad) + 5 * bd);
+                                        System.out.print("\nResult is: " + resint + "\n");
+                                    } else {
+                                        scan.next();
+                                        System.out.println("\nWrong input!!!");
+                                    }
+
+                                }else {
+                                    scan.next();
+                                    System.out.println("\nWrong input!!!");
+                                }
+
                                 break;
                             case 2:
                                 System.out.print("Enter a: ");
-                                ad = scan.nextDouble();
+                                if(scan.hasNextDouble()) {
+                                    ad = scan.nextDouble();
 
-                                System.out.print("Enter b: ");
-                                bd = scan.nextDouble();
+                                    System.out.print("\nEnter b: ");
+                                    if (scan.hasNextDouble()) {
+                                        bd = scan.nextDouble();
 
-                                resd = (ad * bd - (ad + bd) * (ad - bd)) / (bd * bd * bd * bd + ad * ad * ad) + 5 * bd;
-                                System.out.print("\nResult is: " + resd + "\n");
+                                        resd = (ad * bd - (ad + bd) * (ad - bd)) / (bd * bd * bd * bd + ad * ad * ad) + 5 * bd;
+                                        System.out.print("\nResult is: " + resd + "\n");
+                                    } else {
+                                        scan.next();
+                                        System.out.println("\nWrong input!!!");
+                                    }
+
+                                }else {
+                                    scan.next();
+                                    System.out.println("\nWrong input!!!");
+                                }
                                 break;
 //                            case 3:
 //                                System.exit(0);
