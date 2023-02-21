@@ -1,4 +1,6 @@
 import java.util.Scanner;
+
+//Переробити завдання так, щоб якщо в слові перша буква "о", то всі наступні "о" в цьому слові видаляються
 public class Task4 {
     public static void words() {
         Scanner in = new Scanner(System.in);
