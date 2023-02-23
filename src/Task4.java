@@ -8,11 +8,20 @@ public class Task4 {
         String text = in.nextLine();
         String[] words = text.split("[ ,.:;-?!]+");
         System.out.println("Result:");
+        char fLet;
 
-        System.out.print(words[0] + " ");
-        for (int i = 1; i < words.length; i++) {
+
+        for (int i = 0; i < words.length; i++) {
             String word = words[i];
-            word = word.substring(0, 0) + word.substring(1);
+            fLet = word.charAt(0);
+            for(int j = 1; j<word.length(); j++){
+//                System.out.println("Index j: " + j);
+                if(word.charAt(j) == fLet){
+//                    System.out.println("This word " + word + " has letter");
+                      word = word.substring(0, j) + word.substring(j+1);
+                }
+            }
+//            word = word.substring(0, 0) + word.substring(1);
             System.out.print(word + " ");
         }
         System.out.println();
